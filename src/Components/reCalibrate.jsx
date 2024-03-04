@@ -29,7 +29,9 @@ const ReCalibrate = ({children}) => {
             y = event.clientY
         })
 
-        childRef.current.addEventListener("drag", (event) => {
+        
+        
+        childRef.current.addEventListener("dragend", (event) => {
             let newWidth = changeWidth(wrappedElement.style.width, (event.clientX - x))
             let newHeight = changeHeight(wrappedElement.style.height, (event.clientY - y))
 
@@ -39,19 +41,6 @@ const ReCalibrate = ({children}) => {
             parentRef.current.style.height = newHeight
             wrappedElement.style.height = newHeight
         })
-
-        
-        
-        // childRef.current.addEventListener("dragend", (event) => {
-        //     let newWidth = changeWidth(wrappedElement.style.width, (event.clientX - x))
-        //     let newHeight = changeHeight(wrappedElement.style.height, (event.clientY - y))
-
-        //     parentRef.current.style.width = newWidth
-        //     wrappedElement.style.width = newWidth
-
-        //     parentRef.current.style.height = newHeight
-        //     wrappedElement.style.height = newHeight
-        // })
 
     }, [])
 
