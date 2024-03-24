@@ -14,7 +14,7 @@ function App() {
         </a>
 
         <ReCalibrate>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam modi reiciendis optio ratione ea, quaerat repellat quae quod consequatur, atque natus reprehenderit, debitis eius cumque facere explicabo deserunt consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </ReCalibrate>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolores officiis similique, possimus, veniam, ex impedit porro deleniti iure accusantium perferendis voluptatum aspernatur necessitatibus? Ut fuga quas odit recusandae rerum.</p>
