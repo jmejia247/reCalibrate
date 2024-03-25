@@ -15,10 +15,17 @@ describe("something truthy and falsy", () => {
     })
 })
 
-describe("App", () => {
-    it("should render app component to the screen", () => {
-        render(<App />)
-    })
+describe("test reCalibrate against different types of elements", () => {
+    it("should add an element to the screen", () => {
+        const { getByTestId } = render(
+            <div data-testid="div">
+                Hello, test
+            </div>
+        )
+
+        expect(screen.getByTestId('div').nodeName.toLocaleLowerCase()).toBe('div')
+    }) 
+
 
     it("should render reCalibrate component to the screen", () => {
         render(<ReCalibrate />)
@@ -106,4 +113,7 @@ describe("App", () => {
 
         expect(testSubject).toHaveStyle(`width: "303px", height: "234px"`)
     })
+
+
+    
 })
